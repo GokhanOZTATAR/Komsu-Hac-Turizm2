@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hac Paketleri - Komşu Hac Umre Turizm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">🕋</div>
+                <div class="logo-text">
+                    <h1>Komşu Hac Umre</h1>
+                    <p>Turizm</p>
+                </div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="hac-paketleri.html" class="active">Hac Paketleri</a></li>
+                <li><a href="umre-paketleri.html">Umre Paketleri</a></li>
+                <li><a href="konaklama.html">Konaklama</a></li>
+                <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                <li><a href="rehber.html">Rehber</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="sss.html">S.S.S</a></li>
+                <li><a href="iletisim.html" class="nav-cta">İletişim</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Hac Paketleri 2026</h1>
+            <p class="page-subtitle">Ömürde bir kez yapılması farz olan ibadetinizi huzur içinde gerçekleştirin</p>
+        </div>
+    </section>
+
+    <section class="packages-section">
+        <div class="container">
+            <div class="packages-grid" id="packagesGrid">
+                <div class="package-card premium" data-package="1">
+                    <div class="package-badge">VIP</div>
+                    <h3>2026 Hac Dönemi - VIP</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> Haziran 2026</p>
+                        <p><strong>Süre:</strong> 40 Gün</p>
+                        <p><strong>Konaklama:</strong> VIP - Harem'e 200m</p>
+                        <p><strong>Uçuş:</strong> Türk Hava Yolları Business</p>
+                    </div>
+                    <button class="package-btn" onclick="showPackageDetail(1)">Detayları Gör</button>
+                </div>
+
+                <div class="package-card" data-package="2">
+                    <div class="package-badge">Standart</div>
+                    <h3>Standart Hac Paketi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> Haziran 2026</p>
+                        <p><strong>Süre:</strong> 40 Gün</p>
+                        <p><strong>Konaklama:</strong> 4 Yıldızlı - Harem'e 400m</p>
+                        <p><strong>Uçuş:</strong> Türk Hava Yolları</p>
+                    </div>
+                    <button class="package-btn" onclick="showPackageDetail(2)">Detayları Gör</button>
+                </div>
+
+                <div class="package-card" data-package="3">
+                    <div class="package-badge">Ekonomi</div>
+                    <h3>Ekonomi Hac Paketi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> Haziran 2026</p>
+                        <p><strong>Süre:</strong> 40 Gün</p>
+                        <p><strong>Konaklama:</strong> 3 Yıldızlı</p>
+                        <p><strong>Uçuş:</strong> Charter</p>
+                    </div>
+                    <button class="package-btn" onclick="showPackageDetail(3)">Detayları Gör</button>
+                </div>
+
+                <div class="package-card" data-package="4">
+                    <div class="package-badge">Konforlu</div>
+                    <h3>Konforlu Hac Paketi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> Haziran 2026</p>
+                        <p><strong>Süre:</strong> 40 Gün</p>
+                        <p><strong>Konaklama:</strong> 5 Yıldızlı - Harem'e 300m</p>
+                        <p><strong>Uçuş:</strong> Türk Hava Yolları</p>
+                    </div>
+                    <button class="package-btn" onclick="showPackageDetail(4)">Detayları Gör</button>
+                </div>
+
+                <div class="package-card" data-package="5">
+                    <div class="package-badge">Aile</div>
+                    <h3>Aile Hac Paketi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> Haziran 2026</p>
+                        <p><strong>Süre:</strong> 40 Gün</p>
+                        <p><strong>Konaklama:</strong> 4 Yıldızlı - Aile odaları</p>
+                        <p><strong>Uçuş:</strong> Türk Hava Yolları</p>
+                    </div>
+                    <button class="package-btn" onclick="showPackageDetail(5)">Detayları Gör</button>
+                </div>
+
+                <div class="package-card" data-package="6">
+                    <div class="package-badge">Genç</div>
+                    <h3>Genç Hac Paketi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> Haziran 2026</p>
+                        <p><strong>Süre:</strong> 40 Gün</p>
+                        <p><strong>Konaklama:</strong> 3 Yıldızlı</p>
+                        <p><strong>Uçuş:</strong> Ekonomi</p>
+                    </div>
+                    <button class="package-btn" onclick="showPackageDetail(6)">Detayları Gör</button>
+                </div>
+            </div>
+
+            <div class="package-detail" id="packageDetail" style="display:none;">
+                <button class="close-detail" onclick="closePackageDetail()">✕</button>
+                <div id="detailContent"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🕋</div>
+                        <h3>Komşu Hac Umre Turizm</h3>
+                    </div>
+                    <p class="footer-desc">25 yıllık tecrübemizle hac ve umre yolculuğunuzda güvenilir rehberiniz.</p>
+                    <p class="footer-origin"><strong>Şanlıurfa Merkezli</strong></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Erişim</h4>
+                    <ul class="footer-links">
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="hac-paketleri.html">Hac Paketleri</a></li>
+                        <li><a href="umre-paketleri.html">Umre Paketleri</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Komşu Hac Umre Turizm. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

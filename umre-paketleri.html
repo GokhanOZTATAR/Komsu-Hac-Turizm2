@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umre Paketleri - Komşu Hac Umre Turizm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">🕋</div>
+                <div class="logo-text">
+                    <h1>Komşu Hac Umre</h1>
+                    <p>Turizm</p>
+                </div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="hac-paketleri.html">Hac Paketleri</a></li>
+                <li><a href="umre-paketleri.html" class="active">Umre Paketleri</a></li>
+                <li><a href="konaklama.html">Konaklama</a></li>
+                <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                <li><a href="rehber.html">Rehber</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="sss.html">S.S.S</a></li>
+                <li><a href="iletisim.html" class="nav-cta">İletişim</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Umre Paketleri</h1>
+            <p class="page-subtitle">Yıl boyunca her dönem umre programlarımız</p>
+        </div>
+    </section>
+
+    <section class="packages-section">
+        <div class="container">
+            <div class="filter-bar">
+                <label>Filtrele:</label>
+                <select id="durationFilter" onchange="filterPackages()">
+                    <option value="all">Tüm Paketler</option>
+                    <option value="7">7 Gün</option>
+                    <option value="10">10 Gün</option>
+                    <option value="15">15 Gün</option>
+                </select>
+                <select id="hotelFilter" onchange="filterPackages()">
+                    <option value="all">Tüm Oteller</option>
+                    <option value="3">3 Yıldız</option>
+                    <option value="4">4 Yıldız</option>
+                    <option value="5">5 Yıldız</option>
+                </select>
+            </div>
+
+            <div class="packages-grid" id="umrePackagesGrid">
+                <div class="package-card premium" data-duration="10" data-hotel="5">
+                    <div class="package-badge">Özel</div>
+                    <h3>Ramazan Umresi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> 15-25 Mart 2026</p>
+                        <p><strong>Süre:</strong> 10 Gün</p>
+                        <p><strong>Konaklama:</strong> 5 Yıldızlı - Harem Manzaralı</p>
+                        <p><strong>Uçuş:</strong> THY</p>
+                    </div>
+                    <a href="iletisim.html" class="package-btn">Rezervasyon</a>
+                </div>
+
+                <div class="package-card" data-duration="7" data-hotel="4">
+                    <div class="package-badge">Ekonomi</div>
+                    <h3>Nisan Ekonomi Umresi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> 5-12 Nisan 2026</p>
+                        <p><strong>Süre:</strong> 7 Gün</p>
+                        <p><strong>Konaklama:</strong> 4 Yıldızlı - Merkezi</p>
+                        <p><strong>Uçuş:</strong> THY</p>
+                    </div>
+                    <a href="iletisim.html" class="package-btn">Rezervasyon</a>
+                </div>
+
+                <div class="package-card" data-duration="10" data-hotel="5">
+                    <div class="package-badge">Konforlu</div>
+                    <h3>Mayıs Umresi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> 10-20 Mayıs 2026</p>
+                        <p><strong>Süre:</strong> 10 Gün</p>
+                        <p><strong>Konaklama:</strong> 5 Yıldız</p>
+                        <p><strong>Uçuş:</strong> THY</p>
+                    </div>
+                    <a href="iletisim.html" class="package-btn">Rezervasyon</a>
+                </div>
+
+                <div class="package-card" data-duration="7" data-hotel="3">
+                    <div class="package-badge">Ekonomi</div>
+                    <h3>Haziran Ekonomi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> Her Hafta</p>
+                        <p><strong>Süre:</strong> 7 Gün</p>
+                        <p><strong>Konaklama:</strong> 3 Yıldız</p>
+                        <p><strong>Uçuş:</strong> Charter</p>
+                    </div>
+                    <a href="iletisim.html" class="package-btn">Rezervasyon</a>
+                </div>
+
+                <div class="package-card" data-duration="15" data-hotel="5">
+                    <div class="package-badge">VIP</div>
+                    <h3>VIP Umre Paketi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> Özel Tarihler</p>
+                        <p><strong>Süre:</strong> 15 Gün</p>
+                        <p><strong>Konaklama:</strong> 5 Yıldız VIP</p>
+                        <p><strong>Uçuş:</strong> Business Class</p>
+                    </div>
+                    <a href="iletisim.html" class="package-btn">Rezervasyon</a>
+                </div>
+
+                <div class="package-card" data-duration="10" data-hotel="4">
+                    <div class="package-badge">Standart</div>
+                    <h3>Temmuz Umresi</h3>
+                    <div class="package-info">
+                        <p><strong>Tarih:</strong> Her Hafta</p>
+                        <p><strong>Süre:</strong> 10 Gün</p>
+                        <p><strong>Konaklama:</strong> 4 Yıldız</p>
+                        <p><strong>Uçuş:</strong> THY</p>
+                    </div>
+                    <a href="iletisim.html" class="package-btn">Rezervasyon</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">🕋</div>
+                        <h3>Komşu Hac Umre Turizm</h3>
+                    </div>
+                    <p class="footer-origin"><strong>Şanlıurfa Merkezli</strong></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Komşu Hac Umre Turizm. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Komşu Hac Umre Turizm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">🕋</div>
+                <div class="logo-text"><h1>Komşu Hac Umre</h1><p>Turizm</p></div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="hac-paketleri.html">Hac Paketleri</a></li>
+                <li><a href="umre-paketleri.html">Umre Paketleri</a></li>
+                <li><a href="konaklama.html">Konaklama</a></li>
+                <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                <li><a href="rehber.html">Rehber</a></li>
+                <li><a href="galeri.html" class="active">Galeri</a></li>
+                <li><a href="sss.html">S.S.S</a></li>
+                <li><a href="iletisim.html" class="nav-cta">İletişim</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Galeri</h1>
+            <p class="page-subtitle">Hac ve umre anılarımızdan görüntüler</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="https://picsum.photos/400/300?random=1" alt="Kabe">
+                    <div class="gallery-caption">Kabe-i Muazzama</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="https://picsum.photos/400/300?random=2" alt="Medine">
+                    <div class="gallery-caption">Mescid-i Nebevi</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="https://picsum.photos/400/300?random=3" alt="Arafat">
+                    <div class="gallery-caption">Arafat Dağı</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="https://picsum.photos/400/300?random=4" alt="Grup">
+                    <div class="gallery-caption">Grup Fotoğrafları</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="https://picsum.photos/400/300?random=5" alt="Otel">
+                    <div class="gallery-caption">Otellerimiz</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="https://picsum.photos/400/300?random=6" alt="Gece">
+                    <div class="gallery-caption">Gece Manzaraları</div>
+                </div>
+            </div>
+
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <span class="lightbox-close">&times;</span>
+                <img class="lightbox-content" id="lightboxImg">
+                <div class="lightbox-caption" id="lightboxCaption"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Komşu Hac Umre Turizm - Şanlıurfa Merkezli</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
